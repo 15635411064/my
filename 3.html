@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .div1{
+            background: red;
+            border:1px solid black;
+           
+        }
+        .div2{
+            background: black;
+            border:1px solid red;
+            height:100px;
+            margin-top:10px;
+        }
+        .right{
+            float: right;
+            width:30%;height: 80px;
+            background: pink;
+        }
+        .left{
+            float: left;
+            width:20%;
+            height: 200px;
+            background: pink;
+        }
+        .clearfloat{
+            clear:both
+        }
+        
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div class="div1 clearfloat">
+        <div class="right"></div>
+        <div class="left"></div>
+        <div class="clearfloat"></div>
+    </div>
+    <div class="div2">
+        div2
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class One {
+        constructor(){
+            this.userName="秒懂"
+        }
+    }
+    class Two extends One{
+        run(){
+            console.log('456');
+            
+        }
+    }
+    class Three extends Two{
+        run(){
+            super.run()
+            console.log('123');
+            
+        }
+        
+    }
+    let three =new Three();
+    three.run()
+    console.log(three.userName);
+    
+
+
+</script>
+</html>
